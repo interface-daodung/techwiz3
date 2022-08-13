@@ -1,0 +1,12 @@
+[
+  {
+    "imgName":"ao1TreEm.jpg",
+    "title":"Cool children\u0027s shirt",
+    "price":2.4
+  },
+  {
+    "imgName":"quan1TreEm.jpg",
+    "title":"Cool kids pants",
+    "price":1.6
+  }
+]
