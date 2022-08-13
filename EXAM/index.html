@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <link rel="icon" href="images/icon.png" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="resources/script.js?v=1" charset="utf-8" ></script>
+    <script src="resources/glider/glider.js" charset="utf-8" ></script>
+    <link rel="stylesheet" href="resources/glider/glider.css">
+  </head>
+  <body>
+      <!-- <div class="header">
+        <h1>Free shipping available on all orders!</h1>
+      </div> -->
+  <!-- navbar -->
+      <div class="navbar"></div>
+    </div>
+
+<!-- content -->
+<!-- working on banner slider-->
+    <div class="container">
+      <script type="text/javascript">
+        window.addEventListener('load', function(){
+          new Glider(document.querySelector('.glider'), {
+            setting-name: setting-value
+          })
+        })
+      </script>
+      <div class="glider-contain">
+        <div class="glider">
+          <img src="images/banner-1.jpg" alt="">
+          <img src="images/banner-2.jpg" alt="">
+          <img src="images/banner-3.jpg" alt="">
+        </div>
+
+        <div role="tablist" class="dots"></div>
+      </div>
+
+  <!-- new products -->
+        <div class="new-products"></div>
+        <a class="big-button" href="products.html">SHOP NOW</a>
+
+  <!-- top products -->
+        <div class="top-products"></div>
+        <a class="big-button" href="products.html">SHOP NOW</a>
+
+<!-- collection -->
+        <div class="collection"></div>
+  <!-- bottom part -->
+        <div class="bottom-part"></div>
+
+    </div>
+  </body>
+</html>
+
+<script type="text/javascript">
+
+
+  new Glider(document.querySelector('.glider'), {
+
+    slidesToShow: 1,
+    dots: '#dots',
+    draggable: true,
+    arrows: {
+      prev: '.glider-prev',
+      next: '.glider-next'
+    }
+  });
+
+  data = "<h1>NEW ARRIVALS</h1><p>Hundreds of practically new items at a fraction of the new price</p><br>";
+  for (var i = 0; i < 8; i++) {
+    data += `<div class="item">
+                <img src="images/femaleimages/fm-` + (i+1) + `.webp" alt="">
+                <p class="product-name">name</p>
+                <p class="product-price">price</p>
+              </div>`;
+  }
+  $(".new-products").html(data);
+
+  data = "<h1>TOP PRODUCTS</h1>";
+  for (var i = 0; i < 8; i++) {
+    data += `<div class="item">
+                <img src="images/maleimages/m-` + (i+1) + `.webp" alt="">
+                <p class="product-name">name</p>
+                <p class="product-price">price</p>
+              </div>`;
+  }
+  $(".top-products").html(data);
+
+</script>
+

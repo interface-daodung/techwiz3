@@ -1,0 +1,58 @@
+
+.account-form{
+  width: 80%;
+  max-width: 800px;
+  display: block;
+  margin: auto;
+  text-align: center;
+  margin-top: 250px;
+}
+.account-form h2{
+  margin: 10px 0;
+  font-size: 40px;
+}
+
+.account{
+  display: block;
+  margin: auto;
+  width: 350px;
+  padding: 15px;
+  margin: 20px auto;
+  border-radius: 40px;
+  border: 1px solid #aaa;
+  outline: none;
+  font-size: 15px;
+}
+hr{
+  width: 500px;
+  display: block;
+  margin: auto;
+}
+#login,#register, #wfb, #wgg{
+  cursor: pointer;
+}
+#login, #register{
+  color: #000;
+}
+#login:hover, #register:hover{
+  background-color: #ccc;
+}
+#wgg, #wfb{
+  color: #fff;
+}
+#wgg{
+  background-color: #ea4335;
+}
+#wgg:hover{
+  background-color: #E12717;
+}
+#wfb{
+  background-color: #3b5998;
+}
+#wfb:hover{
+  background-color: #30497c;
+}
+
+.more-account-option{
+  text-align: center;
+}

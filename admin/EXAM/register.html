@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Create Account</title>
+    <link rel="icon" href="images/icon.png" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="resources/script.js" charset="utf-8" ></script>
+    <script src="resources/validate.js" charset="utf-8" ></script>
+    <link rel="stylesheet" href="resources/account.css">
+  </head>
+  <body>
+
+<!-- navbar -->
+    <div class="navbar"></div>
+
+<!-- content -->
+    <div class="container">
+
+      <div class="account-form">
+        <form action="" method="post">
+          <h2>Create an account!</h2>
+          <label>
+            <input class="account inptField" id="name" type="text" name="name" required placeholder="Full name">
+          </label>
+          <label>
+            <input class="account inptField" id="email" type="email" name="email" required placeholder="Email address">
+            <span class="error" id="emailErr"></span>
+          </label>
+          <label>
+            <input class="account inptField" id="password" type="password" name="password" required placeholder="Password">
+          </label>
+          <label>
+            <input class="account inptField" id="repassword" type="password" name="repassword" required placeholder="Repeat Password">
+            <span class="error" id="repassErr"></span>
+          </label>
+          <label>
+            <input class="account" id="register" type="submit" name="register" value="Create Account">
+          </label>
+          <hr>
+          <label>
+            <button class="account" id='wgg' type="submit" name="wgg"><i class='fa-brands fa-google'></i> Register with Google</button>
+          </label>
+          <label>
+            <button class="account" id='wfb' type="submit" name="wfb"><i class='fa-brands fa-facebook'></i> Register with Facebook</button>
+          </label>
+        </form>
+        <div class="more-account-option">
+          <a href="login.html">Already have an account? Login!</a>
+        </div>
+      </div>
+    <!-- bottom part -->
+        <div class="bottom-part"></div>
+
+    </div>
+  </body>
+</html>
