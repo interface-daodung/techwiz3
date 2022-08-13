@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="com.aptech_techwiz_jar_0.0.1-SNAPSHOTPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>com.aptech.techwiz.entities.Contact</class>
+    <class>com.aptech.techwiz.entities.Comment</class>
+    <class>com.aptech.techwiz.entities.User</class>
+    <class>com.aptech.techwiz.entities.Product</class>
+    <class>com.aptech.techwiz.entities.Cartinfo</class>
+    <class>com.aptech.techwiz.entities.Category</class>
+    <class>com.aptech.techwiz.entities.Status</class>
+    <class>com.aptech.techwiz.entities.Order1</class>
+    <class>com.aptech.techwiz.entities.Orderdetail</class>
+    <class>com.aptech.techwiz.entities.Role</class>
+    <class>com.aptech.techwiz.entities.Orders</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/thrift_fashion"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value=""/>
+    </properties>
+  </persistence-unit>
+</persistence>

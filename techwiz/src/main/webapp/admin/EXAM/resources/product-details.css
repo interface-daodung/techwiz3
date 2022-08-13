@@ -1,0 +1,60 @@
+h2{
+  text-align: center;
+}
+.details{
+  margin-top: 150px;
+  display: grid;
+  grid-template: auto / 60% 40%;
+}
+.images-area{
+  text-align: center;
+}
+.images-area img{
+  width: 50%;
+}
+.detail-area{
+  display: block;
+  position:relative;
+  line-height: 30px;
+}
+.detail-content{
+  position: sticky;
+  top: 100px;
+}
+.detail-content div{
+  padding: 20px 0;
+}
+.full-detail{
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+#desc-name{
+  font-weight: bold;
+  font-size: 35px;
+}
+#desc-code{
+  font-size: 15px;
+}
+#addtocartbtn{
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  width: 200px;
+  border: 1px solid #000;
+  border-radius: 4px;
+  padding: 10px 30px;
+  display: block;
+  margin: 10px auto;
+}
+#addtocartbtn:hover{
+  color: #fff;
+  background-color: #333;
+}
+.instructions a{
+  text-decoration: none;
+  display: block;
+}
+.instructions a:hover{
+  text-decoration: underline;
+}
